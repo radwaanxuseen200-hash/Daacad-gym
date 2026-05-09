@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dacad Gym</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-text">DACAD GYM</div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+</div>
+
+<!-- HEADER SECTION -->
+<header id="header">
+  <nav>
+    <!-- Logo here -->
+    <div class="logo">DACAD GYM</div>
+    <!-- Navigation menu -->
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#trainers">Trainers</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact" class="nav-cta">Join Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Est. 2018 · Premium Fitness Club</p>
+    <h1>Train<br><span data-text="Hard">Hard</span></h1>
+    <p class="hero-sub">Push beyond your limits with elite trainers, premium equipment, and a powerful community built for champions.</p>
+    <div class="hero-buttons">
+      <button class="btn-primary" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">Start Training</button>
+      <button class="btn-outline" onclick="document.getElementById('programs').scrollIntoView({behavior:'smooth'})">Explore Programs</button>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat"><span class="stat-num counter" data-target="3500">0</span><span class="stat-label">Active Members</span></div>
+  <div class="stat"><span class="stat-num counter" data-target="12">0</span><span class="stat-label">Expert Trainers</span></div>
+  <div class="stat"><span class="stat-num counter" data-target="8">0</span><span class="stat-label">Years Strong</span></div>
+  <div class="stat"><span class="stat-num counter" data-target="98">0</span><span class="stat-label">% Satisfaction</span></div>
+</div>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="section-wrap">
+  <div class="about-grid">
+    <div class="about-img-wrap reveal-left">
+      <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=900&auto=format&fit=crop" alt="Gym Interior">
+      <div class="about-badge"><span>8+</span><span>Years</span></div>
+    </div>
+    <div class="reveal-right">
+      <p class="section-label">Our Story</p>
+      <h2 class="section-title">Built for<br><em>Warriors</em></h2>
+      <p style="color:rgba(255,255,255,0.6);line-height:2;font-size:17px;font-weight:300;margin-bottom:16px;">
+        Dacad Gym was founded on one belief: that every person carries the potential for extraordinary strength. We built this gym to bring that potential out.
+      </p>
+      <p style="color:rgba(255,255,255,0.6);line-height:2;font-size:17px;font-weight:300;">
+        From powerlifting platforms to cardio zones, every inch of Dacad Gym is designed with purpose — and every coach here is committed to your transformation.
+      </p>
+      <div class="about-features">
+        <div class="feature-item"><div class="feature-icon">⚡</div><span>24/7 Access</span></div>
+        <div class="feature-item"><div class="feature-icon">🏆</div><span>Elite Coaches</span></div>
+        <div class="feature-item"><div class="feature-icon">💪</div><span>Pro Equipment</span></div>
+        <div class="feature-item"><div class="feature-icon">🥗</div><span>Nutrition Plans</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS SECTION -->
+<section id="programs" class="section-wrap">
+  <div class="reveal" style="text-align:center;margin-bottom:60px;">
+    <p class="section-label">What We Offer</p>
+    <h2 class="section-title">Our <em>Programs</em></h2>
+  </div>
+  <div class="programs-grid reveal">
+    <div class="program-card">
+      <div class="program-num">01</div>
+      <span class="program-icon">💪</span>
+      <h3 class="program-title">Bodybuilding</h3>
+      <p class="program-desc">Sculpt lean muscle with progressive overload programs designed by certified bodybuilding coaches.</p>
+      <span class="program-arrow">→</span>
+    </div>
+    <div class="program-card">
+      <div class="program-num">02</div>
+      <span class="program-icon">🔥</span>
+      <h3 class="program-title">HIIT Cardio</h3>
+      <p class="program-desc">Obliterate fat with high-intensity interval sessions that torch calories long after you've left the gym.</p>
+      <span class="program-arrow">→</span>
+    </div>
+    <div class="program-card">
+      <div class="program-num">03</div>
+      <span class="program-icon">🏋️</span>
+      <h3 class="program-title">Powerlifting</h3>
+      <p class="program-desc">Build raw, functional strength with deadlifts, squats, and bench press under expert supervision.</p>
+      <span class="program-arrow">→</span>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINERS SECTION -->
+<section id="trainers" class="section-wrap">
+  <div class="reveal" style="text-align:center;margin-bottom:60px;">
+    <p class="section-label">Meet The Team</p>
+    <h2 class="section-title">Elite <em>Trainers</em></h2>
+  </div>
+  <div class="trainers-grid">
+    <div class="trainer-card reveal">
+      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=800&auto=format&fit=crop" alt="Trainer">
+      <div class="trainer-overlay">
+        <span class="trainer-tag">Strength Coach</span>
+        <h3 class="trainer-name">Marcus Reed</h3>
+        <p class="trainer-specialty">Powerlifting · Olympic Lifting · Performance</p>
+        <div class="trainer-line"></div>
+      </div>
+    </div>
+    <div class="trainer-card reveal" style="transition-delay:.15s">
+      <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=800&auto=format&fit=crop" alt="Trainer">
+      <div class="trainer-overlay">
+        <span class="trainer-tag">Physique Coach</span>
+        <h3 class="trainer-name">Kira Voss</h3>
+        <p class="trainer-specialty">Bodybuilding · Nutrition · Competition Prep</p>
+        <div class="trainer-line"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY SECTION -->
+<section id="gallery" class="section-wrap" style="padding-bottom:0;">
+  <div class="reveal" style="text-align:center;margin-bottom:60px;">
+    <p class="section-label">Inside Dacad Gym</p>
+    <h2 class="section-title">Gym <em>Gallery</em></h2>
+  </div>
+  <div class="gallery-track-wrap">
+    <div class="gallery-row">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=500&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=500&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1571388208497-71bedc66e932?q=80&w=500&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=500&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=500&auto=format&fit=crop" alt="">
+      <!-- Duplicates for seamless loop -->
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=500&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=500&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1571388208497-71bedc66e932?q=80&w=500&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=500&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=500&auto=format&fit=crop" alt="">
+    </div>
+    <div class="gallery-row reverse">
+      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=500&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=500&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=500&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=500&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1583454155184-870a1f63aebc?q=80&w=500&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=500&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=500&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=500&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=500&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1583454155184-870a1f63aebc?q=80&w=500&auto=format&fit=crop" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- PRICING SECTION -->
+<section id="pricing" class="section-wrap">
+  <div class="reveal" style="text-align:center;margin-bottom:60px;">
+    <p class="section-label">Membership Plans</p>
+    <h2 class="section-title">Choose Your <em>Level</em></h2>
+  </div>
+  <div class="price-grid">
+    <div class="price-card reveal">
+      <span class="price-badge">Starter</span>
+      <div class="price-plan">Basic</div>
+      <div class="price-amount"><sup>$</sup>25</div>
+      <p class="price-period">/ month</p>
+      <div class="price-features">
+        <p class="price-feature included">Unlimited Gym Access</p>
+        <p class="price-feature included">Locker Rooms</p>
+        <p class="price-feature included">Cardio Equipment</p>
+        <p class="price-feature" style="color:rgba(255,255,255,0.2);">Group Classes</p>
+        <p class="price-feature" style="color:rgba(255,255,255,0.2);">Private Coaching</p>
+      </div>
+      <button class="btn-price">Get Started</button>
+    </div>
+    <div class="price-card featured reveal" style="transition-delay:.1s">
+      <span class="price-badge">Most Popular</span>
+      <div class="price-plan">Pro</div>
+      <div class="price-amount"><sup>$</sup>50</div>
+      <p class="price-period" style="color:rgba(255,255,255,0.7);">/ month</p>
+      <div class="price-features">
+        <p class="price-feature included">Everything in Basic</p>
+        <p class="price-feature included">Nutrition Plan</p>
+        <p class="price-feature included">Group Classes</p>
+        <p class="price-feature included">Body Composition Tracking</p>
+        <p class="price-feature" style="color:rgba(255,255,255,0.4);">Private Coaching</p>
+      </div>
+      <button class="btn-price">Join Pro</button>
+    </div>
+    <div class="price-card reveal" style="transition-delay:.2s">
+      <span class="price-badge">Premium</span>
+      <div class="price-plan">Elite</div>
+      <div class="price-amount"><sup>$</sup>85</div>
+      <p class="price-period">/ month</p>
+      <div class="price-features">
+        <p class="price-feature included">24/7 Access</p>
+        <p class="price-feature included">Private Coaching</p>
+        <p class="price-feature included">Premium Nutrition Support</p>
+        <p class="price-feature included">Recovery Sessions</p>
+        <p class="price-feature included">Competition Prep</p>
+      </div>
+      <button class="btn-price">Go Elite</button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section-wrap">
+  <div class="reveal" style="margin-bottom:60px;">
+    <p class="section-label">Get In Touch</p>
+    <h2 class="section-title">Contact <em>Us</em></h2>
+  </div>
+  <div class="contact-grid">
+    <div class="reveal-left">
+      <h3>Let's Build Your Future</h3>
+      <div class="contact-detail">
+        <div class="contact-icon">📍</div>
+        <p><strong>Location</strong>Borama/somaliland</p>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">📞</div>
+        <p><strong>Phone</strong>+252 63 7360057</p>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">✉️</div>
+        <p><strong>Email</strong>DAACADGYM@gmail.com</p>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-icon">🕐</div>
+        <p><strong>Hours</strong>Mon–Fri: 5am–11pm · Sat–Sun: 6am–9pm</p>
+      </div>
+    </div>
+    <div class="reveal-right">
+      <form class="contact-form" onsubmit="handleForm(event)">
+        <div class="form-row">
+          <div class="form-field">
+            <label>Name</label>
+            <input type="text" placeholder="Your name" required>
+          </div>
+          <div class="form-field">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com" required>
+          </div>
+        </div>
+        <div class="form-field">
+          <label>Subject</label>
+          <input type="text" placeholder="Membership inquiry">
+        </div>
+        <div class="form-field">
+          <label>Message</label>
+          <textarea rows="5" placeholder="Tell us about your goals..."></textarea>
+        </div>
+        <button class="btn-price" type="submit" id="submitBtn">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL MEDIA SECTION - Space for your social media links -->
+<section id="social-media" class="section-wrap" style="text-align:center;padding:60px 0;">
+  <div class="reveal">
+    <p class="section-label">Follow Us</p>
+    <h2 class="section-title">Stay <em>Connected</em></h2>
+    <p style="margin:20px 0;color:#aaa;">Join our community on social media for fitness tips, updates, and motivation.</p>
+    <div class="footer-socials" style="justify-content:center;margin-top:40px;">
+      <a class="social-btn" href="https://www.instagram.com/yourusername" title="Instagram" target="_blank">📸</a>
+      <a class="social-btn" href="https://twitter.com/yourusername" title="Twitter" target="_blank">🐦</a>
+      <a class="social-btn" href="https://www.youtube.com/channel/yourchannel" title="YouTube" target="_blank">▶️</a>
+      <a class="social-btn" href="https://www.facebook.com/yourpage" title="Facebook" target="_blank">📘</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-logo">DACAD GYM</div>
+    <!-- Social media links - replace with your actual URLs -->
+    <div class="footer-socials">
+      <a class="social-btn" href="https://www.instagram.com/yourusername" title="Instagram" target="_blank">📸</a>
+      <a class="social-btn" href="https://www.tiktok.com/@islovalloges?_r=1&_t=ZS-96DFdkITVv5" title="tiktok" target="_blank">🐦</a>
+      <a class="social-btn" href="https://www.youtube.com/channel/yourchannel" title="YouTube" target="_blank">▶️</a>
+      <a class="social-btn" href="https://www.facebook.com/yourpage" title="Facebook" target="_blank">📘</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Dacad Gym. All rights reserved.</p>
+    <p>No Excuses. Only Results.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
